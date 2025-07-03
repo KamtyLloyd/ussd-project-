@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Weather Information</h5>
+                <form id="weatherForm">
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Enter Location</label>
+                        <input type="text" class="form-control" id="location" name="location" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Weather</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="weatherDisplay" class="row mt-4" style="display: none;">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title" id="locationName"></h5>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <h1 id="temperature"></h1>
+                        <span id="description"></span>
+                    </div>
+                    <div class="weather-details">
+                        <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                        <p><strong>Wind Speed:</strong> <span id="windSpeed"></span></p>
+                        <p><strong>Updated:</strong> <span id="timestamp"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

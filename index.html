@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Farmer Weather Information System</h1>
+    <p class="lead">Get weather updates and agricultural insights for your farm</p>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Web Interface</h5>
+                <p class="card-text">Access weather information through our web interface. Enter your location to get current weather conditions and forecasts.</p>
+                <a href="/weather" class="btn btn-primary">Check Weather</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">USSD Access</h5>
+                <p class="card-text">Access weather information via USSD on your mobile phone. Dial *123# to get started.</p>
+                <a href="#" class="btn btn-success">*123#</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Current Weather</h5>
+                <p class="card-text">Get real-time weather updates for your location.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">5-Day Forecast</h5>
+                <p class="card-text">Plan ahead with our 5-day weather forecast.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Agricultural Insights</h5>
+                <p class="card-text">Get crop-specific weather recommendations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
